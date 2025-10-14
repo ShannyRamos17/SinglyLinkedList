@@ -32,6 +32,21 @@ public class SinglyLinkedList {
         return false;
     }
 
+    public int contador(int data) {
+    int contador = 0;
+    Node current = head;
+    while (current != null) {
+        if (current.data == data) {
+            contador++;
+        }
+        current = current.next; 
+    }
+
+    return contador;
+}
+
+
+
     public void printList(){
         Node current = head;
         while (current != null) {
